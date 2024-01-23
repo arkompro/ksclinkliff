@@ -4,12 +4,14 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "start": "nuxt start",
     "dev": "nuxt dev",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.1.0",
